@@ -11,6 +11,12 @@ spring:
 server:
   port: 8082
 
+keycloak:
+  auth-server-url: http://localhost:8484/auth
+  realm: university
+  resource: spring-client
+  public-client: true
+
 eureka:
   instance:
     hostname: localhost
